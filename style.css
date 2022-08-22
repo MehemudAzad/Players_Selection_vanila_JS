@@ -22,7 +22,7 @@ body{
 }
 .banner-description h1{
     color: orangered;
-    font-size: 45px;
+    font-size: 55px;
     font-family: cursive;
     
 }
@@ -30,6 +30,7 @@ body{
     color: white;
     font-size: 20px;
     margin-top: 5%;
+    padding-right:5% ;
 }
 .header img{
     display: block;
@@ -72,6 +73,7 @@ body{
 }
 .card-description{
     padding: 10px;
+    white-space: nowrap;
 }
 .btn-select{
     background-color: #015196;
@@ -99,16 +101,18 @@ body{
     border: .5px solid whitesmoke;
     margin-bottom: 45px;
     padding: 12px;
+
 }
 .selected-section h3{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin:30px 15px;
    
 }
 .selected-section h5{
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 12px;
+    margin-top: 0px;
+    white-space: nowrap;
 }
 #player-expanses{
     color: red;
@@ -136,9 +140,9 @@ body{
     padding: 12px;
 }
 .budget-calculation h3{
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
-    margin: 20px;
+    /* margin: 0; */
 }
 .calculation-container{
     margin-top: 6%;
@@ -147,7 +151,7 @@ body{
     
 }
 .hr-line{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     background-color: orangered;
     color: orangered;
 }
