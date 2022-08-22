@@ -38,9 +38,13 @@ body{
     /* margin-top: 5%; */
     height: 65vh;
     object-fit: cover;
-
+    transition: transform;
 
     /* height: 100%; */
+}
+.header img:hover{
+    filter: brightness(.85);
+    transform: scale(.97);
 }
 .main-container{
 
@@ -60,6 +64,11 @@ body{
 .players-card img{
     width: 100%;
     height: 250px;
+    object-fit: cover;
+    transition: transform 1s;
+}
+.players-card img:hover{
+   transform: scale(.93);
 }
 .card-description{
     padding: 10px;
@@ -146,5 +155,15 @@ body{
     color: red;
     font-size:20px ;
 }
-
+/* footer starts here  */
+.footer{
+    text-align: center;
+}
+.footer-hr{
+    margin: 60px 0px;
+}
+.footer h5{
+    margin: 50px 0px;
+    font-size: 18px;
+}
 
