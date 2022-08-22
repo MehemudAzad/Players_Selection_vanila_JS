@@ -1,11 +1,14 @@
 const selectedSectionEl = document.getElementById('selected-section'); 
-const managerEl = document.getElementById('manager');
-const coachEl = document.getElementById('coach');
-const totalAmountEl = document.getElementById('total');
-const perPlayerPriceEl = document.getElementById('per-player-price')
+const playerExpensesEl = document.getElementById('player-expenses');
+
+;
 var arrPlayers = [];
 function selectPlayer(element){
-   
+    //alert show
+    if(arrPlayers.length>4){
+        alert('You have already selected five players')
+        return;
+    }
    const playerName=  element.parentNode.children[0].innerText;
   
     arrPlayers.push('${playerName}');
@@ -15,9 +18,19 @@ function selectPlayer(element){
   
    //disabled button
    element.disabled = true;
-   //
+  
+
 }
 
-function calculatePlayerExpanses(){
-
+function calculatePlayerExpenses(){
+    const perPlayerPriceEl = document.getElementById('per-player-price');
+   
+    playerExpensesEl.innerText = +perPlayerPriceEl.value*(arrPlayers.length);
+    // console.log(perPlayerPriceEl.value)
+}
+function finalAmount(){
+    const managerEl = document.getElementById('manager');
+    const coachEl = document.getElementById('coach');
+    const totalAmountEl = document.getElementById('total');
+    totalAmountEl.innerText= +managerEl.value + +coachEl.value + +playerExpensesEl.innerText;
 }

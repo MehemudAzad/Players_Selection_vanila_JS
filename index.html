@@ -127,26 +127,26 @@
                     <hr class="hr-line">
                     <div class="input-flex">
                         <h5>per player: </h5> 
-                        <input class="input-box" type="text" name="" id=" per-player-price" placeholder="#">
+                        <input class="input-box" type="text" name="" id="per-player-price" placeholder="#">
                     </div>
                    
-                    <button class="btn-select">calculate</button>
+                    <button class="btn-select" onclick="calculatePlayerExpenses()" >calculate</button>
                     <div class="input-flex">
-                    <h5>player expenses : </h5>
-                    <span id="player-expanses">500</span>
+                    <h5>player expenses : $ </h5>
+                    <span id="player-expenses">000</span>
                     </div>
                     <div class="input-flex">
-                        <h5 id="manager">Manager:</h5>
-                        <input class="input-box" type="text" placeholder="#">
+                        <h5 >Manager:</h5>
+                        <input id="manager" class="input-box" type="text" placeholder="#">
                     </div>
                     <div class="input-flex">
-                        <h5 id="coach">Coach:</h5>
-                        <input class="input-box" type="text" placeholder="#">
+                        <h5 >Coach:</h5>
+                        <input id="coach" class="input-box" type="text" placeholder="#">
                     </div>
-                    <button class="btn-select" onclick="" >Calculate Total</button>
+                    <button class="btn-select" onclick="finalAmount()" >Calculate Total</button>
                     <div class="input-flex">
                     <h5>Total: </h5>
-                    <span id="total">11000</span>
+                    <span id="total">0</span>
                     </div>
                    
                 </div>
